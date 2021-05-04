@@ -1,7 +1,7 @@
 export const homeObjOne = {
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: 'Exclusive Access',
     headline: 'Unlimited Transactions with zero fees',
     description:

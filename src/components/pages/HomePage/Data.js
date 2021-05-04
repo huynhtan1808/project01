@@ -12,7 +12,7 @@ export const homeObjOne = {
     alt: 'Credit Card'
   };
   
-  export const homeObjTwo = {
+export const homeObjTwo = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
@@ -26,7 +26,7 @@ export const homeObjOne = {
     alt: 'Vault'
   };
   
-  export const homeObjThree = {
+export const homeObjThree = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
@@ -40,7 +40,7 @@ export const homeObjOne = {
     alt: 'Vault'
   };
   
-  export const homeObjFour = {
+export const homeObjFour = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,

@@ -28,43 +28,44 @@ function Navbar() {
 
 
     return (
+        <>
         <IconContext.Provider value={{ color: '#000' }}>
         <div className="navbar">
             <div className="navbar-container container">
                 <Link to='/' className="navbar-logo">
                     <MdFingerprint className="navbar-icon"/>
-                    Huynh Tan
+                    HUYNH TAN
                     </Link>
                 <div className="menu-icon" onClick={handleClick}>
                     { click ? <FaTimes/> : <FaBars/> }
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                    <li className="nav-btn">
+                    <li className="nav-btn2">
                         {button ? (
                             <Link to='/sign-up' className="btn-link">
-                                <Button buttonStyle="btn--outline" buttonColor='blue'>
-                                    POST A JOB</Button>
+                                <Button buttonStyle="btn--outline" buttonColor='black'>
+                                    Post a job</Button>
                             </Link>
                         ): (
                             <Link to='/sign-up' className="btn-link" onClick={closeMobileMenu}>
                                 <Button buttonStyle="btn--outline"
                                 buttonSize="btn-mobile">
-                                    POST A JOB
+                                    Post a job
                                     </Button>
                             </Link>
                         )}
                     </li>
-                    <li className="nav-btn">
+                    <li className="nav-btn1">
                         {button ? (
                             <Link to='/sign-up' className="btn-link">
-                                <Button buttonStyle="btn--outline"buttonColor='red'>
-                                    SIGN UP</Button>
+                                <Button buttonStyle="btn--outline" buttonColor='red'>
+                                    Contact me</Button>
                             </Link>
                         ): (
                             <Link to='/sign-up' className="btn-link" onClick={closeMobileMenu}>
-                                <Button buttonStyle="btn--outline"
+                                <Button buttonStyle="btn--outline" buttonColor='red' 
                                 buttonSize="btn-mobile">
-                                    SIGN UP
+                                    Contact me
                                     </Button>
                             </Link>
                         )}
@@ -73,7 +74,7 @@ function Navbar() {
             </div>
         </div>
         </IconContext.Provider>
-        
+        </>
     )
 }
 

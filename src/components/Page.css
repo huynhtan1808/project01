@@ -3,7 +3,7 @@
     margin: 0 auto;
     position: relative;
     white-space: initial;
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
   }
 
 .page-container {
@@ -13,7 +13,7 @@
     margin: 0 auto;
 }
     
-.page-items p{
+.banner p{
     font-size: 17px;
     font-weight: 700;
     margin: 0;
@@ -22,7 +22,7 @@
     vertical-align: middle;
 }
 
-.page-items {
+.banner {
     display: block;
     position: relative;
     padding: .75em;
@@ -38,8 +38,8 @@
     box-shadow: 0 0 0 1px #dddddd,0 2px 4px 0 rgb(0 0 0/7%),0 1px 1.5px 0 rgb(0 0 0/5%)
 }
     
-.page-links:hover {
-    color: #5f5f5f;
+.banner:hover {
+    background-color: #f1f1f1;
 }
     
 .page-links {
@@ -65,6 +65,10 @@
     filter: saturate(0%) brightness(61%) contrast(380%) contrast(50%) brightness(208%);
     vertical-align: middle;
 }
+.featured-clients img:hover{
+    opacity: 50%;
+}
+
 .featured-clients p{
     font-size: 10px;
     font-weight: normal;

@@ -15,7 +15,7 @@ function Page({alt}) {
     return (
         <div className="page">
             <div className="page-container">
-                <a className="page-items">
+                <a className="banner">
                     <p>👉 Hiring remotely? Reach 1,000,000+ remote workers on the 🏆 #1 Remote Jobs board</p>
                     <Link to='/sign-up' className="btn-banner">
                         <Button buttonStyle="btn--outline" buttonColor='green'>

@@ -57,8 +57,8 @@
 .btn--large:hover, .btn--medium:hover, .btn--mobile:hover{
     transition: all 0.3s ease-out;
     background: #fff;
-    color: #242424;
-    border: 2px solid #000;
+    color: #0f1115;
+    border: 2px solid #0f1115;
 }
 
 .btn--wide:hover {
@@ -83,6 +83,12 @@
     background-color: #25ce4a;
     color: #fff;
     border: 2px solid #25ce4a;
+}
+
+.black {
+    background-color: #0f1115;
+    color: #fff;
+    border: 2px solid #0f1115;
 }
 
 .primary {

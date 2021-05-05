@@ -10,11 +10,7 @@ function Home() {
     <>
       <Box />
       <Page />
-      <HeroSection {...homeObjOne} />
-      <HeroSection {...homeObjThree} />
-      <HeroSection {...homeObjTwo} />
       <Pricing />
-      <HeroSection {...homeObjFour} />
     </>
   );
 }

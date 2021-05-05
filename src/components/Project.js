@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
-import './Pricing.css';
+import './Project.css';
 import { Link } from 'react-router-dom';
 import logo1 from '../images/amazon.png'
 

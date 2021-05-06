@@ -4,48 +4,49 @@ import './Project.css';
 import { Link } from 'react-router-dom';
 import logo1 from '../images/amazon.png'
 
-function Pricing() {
+function Project() {
   return (
-    <table className="projects">
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td><img src={logo1} alt=""/></td>
-          <td className="company company_and_position"><h3>Vaan Group</h3></td>
-          <td className="tags"><div rel="follow" className="tag"><h3>react</h3></div></td>
-          <td className="time"><a target="_blank" href="/remote-jobs/103856-remote-senior-frontend-engineer-vaan-group"><time datetime="2021-05-05T13:49:31+00:00">📌	2h</time></a></td>
-          <td className="source"><a rel="noindex nofollow" class="no-border tooltip" target="_blank" href="/l/103856"><div target="_blank" class="apply_button no-logo"><p>Apply</p></div></a></td>
-        </tr>
-        <tr>
-          <td><img src={logo1} alt=""/></td>
-          <td className="company company_and_position"><h3>Vaan Group</h3></td>
-          <td className="tags"><div rel="follow" className="tag"><h3>react</h3></div></td>
-          <td className="time"><a target="_blank" href="/remote-jobs/103856-remote-senior-frontend-engineer-vaan-group"><time datetime="2021-05-05T13:49:31+00:00">📌	2h</time></a></td>
-          <td className="source"><a rel="noindex nofollow" class="no-border tooltip" target="_blank" href="/l/103856"><div target="_blank" class="apply_button no-logo"><p>Apply</p></div></a></td>
-        </tr>
-        <tr>
-          <td><img src={logo1} alt=""/></td>
-          <td className="company company_and_position"><h3>Vaan Group</h3></td>
-          <td className="tags"><div rel="follow" className="tag"><h3>react</h3></div></td>
-          <td className="time"><a target="_blank" href="/remote-jobs/103856-remote-senior-frontend-engineer-vaan-group"><time datetime="2021-05-05T13:49:31+00:00">📌	2h</time></a></td>
-          <td className="source"><a rel="noindex nofollow" class="no-border tooltip" target="_blank" href="/l/103856"><div target="_blank" class="apply_button no-logo"><p>Apply</p></div></a></td>
-        </tr>
-        <tr>
-          <td><img src={logo1} alt=""/></td>
-          <td className="company company_and_position"><h3>Vaan Group</h3></td>
-          <td className="tags"><div rel="follow" className="tag"><h3>react</h3></div></td>
-          <td className="time"><a target="_blank" href="/remote-jobs/103856-remote-senior-frontend-engineer-vaan-group"><time datetime="2021-05-05T13:49:31+00:00">📌	2h</time></a></td>
-          <td className="source"><a rel="noindex nofollow" class="no-border tooltip" target="_blank" href="/l/103856"><div target="_blank" class="apply_button no-logo"><p>Apply</p></div></a></td>
-        </tr>
-        <tr>
-          <td><img src={logo1} alt=""/></td>
-          <td className="company company_and_position"><h3>Vaan Group</h3></td>
-          <td className="tags"><div rel="follow" className="tag"><h3>react</h3></div></td>
-          <td className="time"><a target="_blank" href="/remote-jobs/103856-remote-senior-frontend-engineer-vaan-group"><time datetime="2021-05-05T13:49:31+00:00">📌	2h</time></a></td>
-          <td className="source"><a rel="noindex nofollow" class="no-border tooltip" target="_blank" href="/l/103856"><div target="_blank" class="apply_button no-logo"><p>Apply</p></div></a></td>
-        </tr>
-      </tbody>    
-    </table> 
+    <div className="projects">
+      <h1>My Projects</h1>
+      <section className="basic-grid">
+        <div className="card">
+          <a>
+            <div className="card-content">
+              <div className="text-center"><img src={ logo1 }/></div>
+              <h3>React Firebase Full Course</h3>
+              <p>Build a fullstack server-rendered webapp with React, Next.js, and Firebase </p>
+              <Link to='/myworks' className="">
+                <Button buttonStyle="btn--outline" buttonColor='black' buttonSize="btn--wide">Detail</Button>
+              </Link>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a>
+            <div className="card-content">
+              <div className="text-center"><img src={ logo1 }/></div>
+              <h3>React Firebase Full Course</h3>
+              <p>Build a fullstack server-rendered webapp with React, Next.js, and Firebase </p>
+              <Link to='/sign-up' className="">
+                <Button buttonStyle="btn--outline" buttonColor='black' buttonSize="btn--wide">Detail</Button>
+              </Link>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a>
+            <div className="card-content">
+              <div className="text-center"><img src={ logo1 }/></div>
+              <h3>React Firebase Full Course</h3>
+              <p>Build a fullstack server-rendered webapp with React, Next.js, and Firebase </p>
+              <Link to='/sign-up' className="">
+                <Button buttonStyle="btn--outline" buttonColor='black' buttonSize="btn--wide">Detail</Button>
+              </Link>
+            </div>
+          </a>
+        </div>
+      </section>
+  </div>
   );
 }
-export default Pricing;
+export default Project;

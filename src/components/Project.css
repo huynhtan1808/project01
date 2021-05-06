@@ -8,9 +8,9 @@
   margin: .5em auto;
   margin-bottom: 3em;
 }
-.projects table{
-  border-collapse: separate;
-}
+.projects p{
+    font-size: 15px;
+  }
 
 .projects tr{
   cursor: pointer;
@@ -37,13 +37,9 @@
   vertical-align: middle;
   font-weight: 400;
   -webkit-tap-highlight-color: transparent;
-}
-
-.projects img{
-  padding-right: .5em;
-  max-width: 4em;
-  border: none;
-  text-align: center;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 }
 
 .company_and_position {
@@ -83,6 +79,41 @@ td.company h3 {
   vertical-align: middle;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  font-size: 3rem;
+  color: #000;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  transform: translateY(0);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transition: transfrom 0.3s;
+}
+.basic-grid {
+  margin-top: 1em;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.card-content{
+  padding: 0.5em;
+}
+.text-center {
+  text-align: center;
+}
 
 
 @media screen and (max-width: 960px) {}

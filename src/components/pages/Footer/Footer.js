@@ -5,9 +5,10 @@ import { Link } from 'react-router-dom';
 import {
   FaFacebook,
   FaInstagram,
-  FaYoutube,
+  FaGithub,
   FaTwitter,
-  FaLinkedin
+  FaLinkedin,
+  FaReact
 } from 'react-icons/fa';
 import { MdFingerprint } from 'react-icons/md';
 
@@ -16,13 +17,8 @@ function Footer() {
     <div className='footer-container'>
       <section className='social-media'>
         <div className='social-media-wrap'>
-          <div className='footer-logo'>
-            <Link to='/' className='social-logo'>
-              <MdFingerprint className='navbar-icon' />
-              Huynh Tan
-            </Link>
-          </div>
-          <small className='website-rights'>Huynh Tan © 2021</small>
+          <small className='website-rights'>Copyright © 2021
+Created with <FaReact color="#60DAFB" className="React"/>  by Huynh Tan </small>
           <div className='social-icons'>
             <Link
               className='social-icon-link'
@@ -46,9 +42,9 @@ function Footer() {
                 ''
               }
               target='_blank'
-              aria-label='Youtube'
+              aria-label='Github'
             >
-              <FaYoutube />
+              <FaGithub />
             </Link>
             <Link
               className='social-icon-link'
